@@ -1,0 +1,150 @@
+
+#encabezado {
+    text-align: center;
+    background-color:beige;
+    height: 100vh; 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;   
+}
+ 
+#encabezado h1{
+    font-size: 80px; 
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Marcellus SC', serif;
+}
+
+#encabezado h2{
+    font-family: 'Inconsolata', monospace;
+}
+
+nav ul{
+    background-color: burlywood;
+    margin-top: 80px;
+    list-style-type:none;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid peru;
+}
+nav li{
+    
+    display:inline-block;
+    justify-content: center;       
+}
+
+nav li a{
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color:peru;  
+       
+}
+
+#contenido{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contenido h2 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+#foto-perfil{
+    text-align: center;
+    margin-top: 5px;
+}
+img{
+    border-radius: 50%;  
+    border: 5px solid burlywood;
+}
+
+#datos-lista-izq ul li{
+    list-style: none;
+    text-align: right;
+}
+#datos-lista-izq ul p{
+    text-align:right;
+    margin-right: 0px;
+    font-size: 20px;
+}
+
+#datos-lista-der ul li{
+    text-align: left;
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px;
+}
+#datos-lista-der ul p{
+    font-size: 20px;
+    text-align: left;    
+    margin-left: 0px;
+    padding: 0px;
+}
+.col ul{
+    padding: 0px 0px 0px 0px;
+}
+.col li{
+    padding: 0px 0px 0px 0px;
+}
+
+
+#descripcion p{
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 10px;
+    border: 2px solid burlywood;
+}
+
+
+#estudios h4{
+    font-size: 26px;
+}
+#estudios h6 {
+    font-size: 20px;
+}
+p, li{
+    font-size: 19px; 
+    text-align:left;
+}
+
+
+#formulario-contacto{
+    text-align: center;
+}
+form label{
+    display:block;
+    font-size: 20px;
+    padding: 10px;
+}
+form input, textarea{
+    width: 40%;
+    border-radius: 6px;
+    padding: 5px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#boton{
+    margin: 100px;
+    margin-top: 30px;
+} 
+button{
+    border: 1px solid burlywood;
+    border-radius: 5px;
+    width: 40%;
+    background-color: bisque;
+}
+
+footer{
+    background-color: beige;
+    text-align: center;
+    padding-top: 15px;
+    margin: 60px 40px 20px 40px;
+}
