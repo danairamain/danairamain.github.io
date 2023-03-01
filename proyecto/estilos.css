@@ -1,29 +1,16 @@
-
-/*side bar cerrada */
-.side-bar.close{
-    width: 70px;
-}
-.side-bar.close header .text-bar{
-}
-.side-bar.close li .text-bar{
-
-}
-
-
-
-/* side bar abierta */
-.side-bar{
+#side-bar{
     position:fixed;
-    width: 170px;
+    width: 70px;
     height: 100%;
     padding: 10px 10px;
-    transition: 5s;
     background-color: #ECC589;
+    overflow: hidden;
 }
 
 
-.side-bar header{
-    font-size: 30px;
+#toggle {
+    text-transform: uppercase;
+    font-size: 27px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -32,13 +19,12 @@
     width: 60px;
 }
 
-.side-bar header{
+#toggle header{
     padding: 0px;
     height: 50px;
     width: 60px;
 }
-
-.side-bar header a{
+#toggle a{
     text-decoration: none;
     font-size: 26px;
     line-height: 50px;
@@ -49,59 +35,58 @@
     margin-left: 5px;
     color: #B1701B; 
 }
-.side-bar a #icon-menu{
+#toggle #boton-menu{
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
-    font-size: 26px;
+    font-size: 25px;
 }
 
-.side-bar header .text-bar{
-    display: flex;
+#toggle .text-bar{
     align-items: center;
-    padding-left: 10px;
+    padding-left: 15px;
     margin-left: 10px;
     transition: 5s;
+    left: px;
+    font-size: 27px;
 }
 
-.side-bar li .icon{
+#side-bar li .icon{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    align-items: left;
+    justify-content: left;
+    width: 60px;
     font-size: 20px;
 }
-.side-bar li .text-bar{
-    display:flex;
+#side-bar li .text-bar{
+    position: relative;
     justify-content: left;
-    align-items: center;
-    padding-left: 10px;
-    margin-left: 10px;
+    align-items: left;
+    padding-left: 15px;
+    margin-left: 15px;
     transition: 5s;
-    height: 100px;
     min-width: 100px;
 }
-.side-bar.open.text-bar{
-    opacity: 0%;
-} 
-.side-bar ul{
+
+#side-bar ul{
     list-style-type:none;
     text-align: center;
     padding: 5px;
     margin: 0px;
 }
-.side-bar ul li{
+#side-bar li{
+    width: 50px;
     margin-top: 40px;
     padding: 0px;
     height: 60px;
-    text-align: center;
 }
-.side-bar ul li:hover{
+#side-bar ul li:hover{
     border-left: 3px solid #B1701B;
     background: #E5BF86;    
 }
-.side-bar li a{
+#side-bar a{
     text-decoration: none;
     font-size: 18px;
     line-height: 30px;
@@ -114,10 +99,7 @@
     color: #B1701B;         
 }
 
-body{
-    margin-left: 170px;
-}
-/* encabezado */
+                            /* encabezado */
 #encabezado {
     text-align: center;
     background-color:beige;
@@ -139,13 +121,15 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 
-/*contenido */
+                        /*contenido */
 body #contenido{
+    font-family: 'Golos Text', sans-serif;
     background-color: #f9f9f9;
     margin: 0px 0px 0px 70px;
 }
 
 #contenido h2 {
+    font-weight: bold;
     text-align: center;
     padding: 50px 0px 0px 0px;
     border-bottom: 1px solid black;
@@ -165,6 +149,7 @@ img{
     list-style: none;
     text-align: right;
 }
+
 #datos-lista-izq ul p{
     text-align:right;
     margin-right: 0px;
@@ -176,7 +161,9 @@ img{
     list-style: none;
     margin-left: 0px;
     padding: 0px;
+
 }
+
 #datos-lista-der ul p{
     font-size: 20px;
     text-align: left;    
@@ -201,11 +188,17 @@ img{
     border: 2px solid #E5BF86;
 }
 
+#experiencia h4{
+    background-color: beige;
+    font-weight: 600;
+}
 #experiencia h6{
+    font-weight: 500;
     font-size: 20px;
 }
 
 #estudios h4{
+    background-color: beige;
     font-size: 26px;
 }
 #estudios h6 {
@@ -214,6 +207,7 @@ img{
 p, li{
     font-size: 19px; 
     text-align:left;
+    list-style: none    ;
 }
 
 
