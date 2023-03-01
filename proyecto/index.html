@@ -11,77 +11,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 <body>
+    <main>
     
-<main>
-        <section id="encabezado">
-                
-            <h1>Evelyn Smith</h1>
-            <h2>Estudiante Lic. en Análisis de Sistemas</h2>
-            <nav>
+        <section>
+            <nav class="side-bar close">
+                <header>
+                    <a href="" id="menu">
+                        <i class="fa-solid fa-bars" id="icon-menu"></i>
+                        <span class="text-bar">Menú</span>
+                    </a>
+                </header>
                 <ul>
-                    <li><a href="#encabezado">Inicio</a></li>
-                    <li><a href="#sobre-mí">Sobre mí</a></li>
-                    <li ><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#estudios">Educación</a></li>
-                    <li><a href="#formulario-contacto">Contactáctate</a></li>
+                    <li>
+                        <a href="#encabezado">
+                        <i class="fa-solid fa-house icon"></i>
+                        <span class="text-bar">Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre-mí">
+                            <i class="fa-solid fa-circle-user icon"></i>
+                            <span class="text-bar">Sobre mi</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#experiencia">
+                            <i class="fa-solid fa-business-time icon"></i>
+                            <span class="text-bar">Experiencia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#estudios">
+                            <i class="fa-solid fa-book icon"></i>
+                            <span class="text-bar">Educación</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#formulario-contacto">
+                            <i class="fa-solid fa-comment"></i>
+                            <span class="text-bar">Contacto</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </section>
+        
+        <section>
+            <div id="encabezado">
+                <h1>Evelyn Smith</h1>
+                <h2>Estudiante Lic. en Análisis de Sistemas</h2>
+            </div> 
+        </section>
 
 
-    <section id="contenido" class="container">
-        <div id="sobre-mí">
-            <h2>SOBRE MÍ</h2>
-        </div>
-        <div class="container">    
-            <div class="row">
-                <div class="col" id="datos-lista-izq">
-                     <ul>
-                        <li><h4>Nombre</h4>
+        <section id="contenido">
+            <div id="sobre-mí" class="container">
+                <h2>SOBRE MÍ</h2>
+            </div>
+            <div class="container">    
+                <div class="row">
+                    <div class="col" id="datos-lista-izq">
+                         <ul>
+                            <li><h4>Nombre</h4>
                             <p> Evelyn Smith</p>
-                        </li>
-                        <li><h4>Nacimiento</h4>
+                            </li>
+                            <li><h4>Nacimiento</h4>
                             <p>18/12/2000</p>
-                        </li>
-                        <li><h4>Nacionalidad</h4>
+                            </li>
+                            <li><h4>Nacionalidad</h4>
                             <p>Argentina</p>
-                        </li>
-                    </ul>
-                </div>
-                <div id="foto-perfil" class="col">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="foto-perfil" class="col">
                     <img src="https://randomuser.me/api/portraits/women/71.jpg" height="220px" alt="">
-                </div>
-                <div class="col" id="datos-lista-der">
-                    <ul>
-                        <li><h4>E-mail</h4>
-                        <p>evelyn.smith@example.com</p>
-                        </li>
-                        <li><h4>Teléfono</h4>
-                        <p>(776) 368-4066</p>
-                        </li>
-                        <li><h4>Dirección</h4>
-                        <p>Bollinger, 4343</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-        </div>
-        <div class="container-fluid" id="descripcion">
-            <p>
+                    </div>
+                    <div class="col" id="datos-lista-der">
+                        <ul>
+                            <li><h4>E-mail</h4>
+                            <p>evelyn.smith@example.com</p>
+                            </li>
+                            <li><h4>Teléfono</h4>
+                            <p>(776) 368-4066</p>
+                            </li>
+                            <li><h4>Dirección</h4>
+                            <p>Bollinger, 4343</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+            <div class="container" id="descripcion">
+                <p>
                 Soy una persona proactiva, con amplias capacidades de adaptación; comunicación; gran afinidad al 
                 trabajo en equipo y constante desarrollo de ideas creativas para la solución de 
                 objetivos laborales. Busco crecer en una empresa que me permita desarrollar mis habilidades. 
-            </p> 
-        </div>
+                </p> 
+            </div>
 
 
-        <div id="experiencia" class="container">
-            <h2>EXPERIENCIA</h2>
-                <div>        
-                    <h4>Soporte técnico</h4>
+            <div id="experiencia" class="container">
+                <h2>EXPERIENCIA</h2>
+                    <div>        
+                        <h4>Soporte técnico</h4>
                         <h6>Freelancer</h6>
                         <p>Agosto 2020 - Diciembre 2020</p>
                         <ul>
@@ -89,9 +124,9 @@
                             <li>Actualización del software de los 3 ordenadores de un supermercado local</li>
                             <li>Realización de cambios de disco duro para 5 clientes diferentes.</li>
                         </ul>
-                </div>
-                <div>
-                    <h4>Cajera</h4>
+                    </div>
+                    <div>
+                        <h4>Cajera</h4>
                         <h6>Supermercado local</h6>
                         <p>Marzo 2019 - Diciembre 2019</p>
                         <ul>
@@ -101,77 +136,75 @@
                                 brindar atención oportuna a los clientes.</li>
                                 
                         </ul>
-                </div>
+                    </div>
 
 
-        </div>
+            </div>
     
  
-        <div class="container" id="estudios">
-            <h2>FORMACIÓN ACADÉMICA</h2>
-            <div id="Universidad">
-                <ul>
-                    <li> 
-                    <h4> Licenciatura en Análisis de Sistemas</h4>
+            <div class="container" id="estudios">
+                <h2>FORMACIÓN ACADÉMICA</h2>
+                <div id="Universidad">
+                    <ul>
+                        <li> <h4> Licenciatura en Análisis de Sistemas</h4>
                         <h6>Universidad de Buenos Aires</h6>
                         <p>Estudiante (2020 - Actualidad)</p>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                    </ul>
+                </div>
                
-            <div id="Secundaria">
-                <ul>
-                    <li>
+                <div id="Secundaria">
+                    <ul>
+                        <li>
                         <h4 class=> Bachillerato</h4>
                         <h6>Escuela de Educación Secundaria - Buenos Aires</h6>
                         <p>Finalizado (2012 - 2018)</p>
-                    </li>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>             
+
+            <div class="container">
+
+                <h2>SOFTWARE</h2>
+                <ul>
+                    <li>Microsoft: Word, Excel, Powerpoint, Outlook. (Experto)</li>
+                    <li>Adobe Photoshop (Intermedio)</li>
+                    <li>Adobe Illustrator (Intermedio)</li>
+                    <li>Visual Code (Básico)</li>
                 </ul>
             </div>
-                
-        
-        
-
-        </div>
-
-        <div class="container">
-
-            <h2>SOFTWARE</h2>
-            <ul>
-                <li>Microsoft: Word, Excel, Powerpoint, Outlook. (Experto)</li>
-                <li>Adobe Photoshop (Intermedio)</li>
-                <li>Adobe Illustrator (Intermedio)</li>
-                <li>Visual Code (Básico)</li>
-            
-            </ul>
-
-        </div>
     
-        <div id="formulario-contacto" class="container">
-            <h2>FORMULARIO DE CONTACTO</h2>
-                <form action="">
-                    <div>
-                        <label for="nombre"></label>
-                        <input type="text" name="nombre" placeholder="Nombre completo">
-                    </div>
-                    <div>
-                        <label for="email"></label>
-                        <input type="text" name="email" placeholder="E-mail">
-                    </div>
-                    <div>
-                        <label for="mensaje"></label>
-                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                    </div id="boton">
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-        </div>
-
-        <footer>
-            <h6>Gracias por ver :)</h6>
-        </footer>
-    </section>
-</main>
-
+            <div id="formulario-contacto" class="container">
+                <h2>FORMULARIO DE CONTACTO</h2>
+                    <form action="">
+                        <div>
+                            <label for="nombre"></label>
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div>
+                            <label for="mensaje"></label>
+                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+                        </div id="boton">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form> 
+                    
+            </div>
+            <div class="container">
+                <button id="boton-hola">hola</button>
+                <p id="hola">aaaaaaaa</p>
+            </div>
+            <footer>
+                <h6>Gracias por ver :)</h6>
+            </footer>
+        </section>
+    </main>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
