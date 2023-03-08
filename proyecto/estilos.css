@@ -1,55 +1,50 @@
 #side-bar{
     position:fixed;
-    width: 70px;
     height: 100%;
-    padding: 10px 10px;
-    background-color: #ECC589;
+    padding: 10px 15px 0px 10px;
+    background-color: #F1DBA0;
     overflow: hidden;
+    font-family: 'Golos Text', sans-serif;
 }
 
+.cerrado{
+    width: 70px;
+    transition: all 5s ease;
 
-#toggle {
-    text-transform: uppercase;
+}
+
+#header {
     font-size: 27px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
-    width: 60px;
 }
 
-#toggle header{
+#menu {
     padding: 0px;
     height: 50px;
-    width: 60px;
 }
-#toggle a{
-    text-decoration: none;
-    font-size: 26px;
+#menu {
     line-height: 50px;
     display: flex;
     align-items: center;
     padding: 10px;
-    width: 100%;
     margin-left: 5px;
-    color: #B1701B; 
+    color: #985E12; 
 }
-#toggle #boton-menu{
+#boton-menu{
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
     font-size: 25px;
 }
 
-#toggle .text-bar{
-    align-items: center;
-    padding-left: 15px;
-    margin-left: 10px;
-    transition: 5s;
-    left: px;
+#menu .text-bar{
+    align-items: left;
+    margin-left: 22px;
     font-size: 27px;
 }
 
@@ -59,15 +54,17 @@
     justify-content: left;
     width: 60px;
     font-size: 20px;
+    margin-left: 0px;
 }
 #side-bar li .text-bar{
     position: relative;
     justify-content: left;
     align-items: left;
-    padding-left: 15px;
-    margin-left: 15px;
-    transition: 5s;
-    min-width: 100px;
+    margin: 0px 0px 0px 22px;
+    padding: 5px;
+    transition:all 5s ease;
+    font-size: 20px;
+    min-width: 100%;
 }
 
 #side-bar ul{
@@ -77,14 +74,15 @@
     margin: 0px;
 }
 #side-bar li{
-    width: 50px;
     margin-top: 40px;
     padding: 0px;
     height: 60px;
+    width: 60%;
 }
-#side-bar ul li:hover{
-    border-left: 3px solid #B1701B;
-    background: #E5BF86;    
+#side-bar li:hover{
+    border-left: 2px solid #B1701B;
+    background: #E7D29A;    
+    width: 100%;
 }
 #side-bar a{
     text-decoration: none;
@@ -94,9 +92,8 @@
     align-items: center;
     padding: 5px;
     height: 50px;
-    width: 50px;
     margin-left: 5px;
-    color: #B1701B;         
+    color: #985E12;         
 }
 
                             /* encabezado */
@@ -108,6 +105,7 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
+    transition: all 1s;
 }
  
 #encabezado h1{
@@ -126,6 +124,7 @@ body #contenido{
     font-family: 'Golos Text', sans-serif;
     background-color: #f9f9f9;
     margin: 0px 0px 0px 70px;
+    transition: all 1s;
 }
 
 #contenido h2 {
@@ -135,14 +134,16 @@ body #contenido{
     border-bottom: 1px solid black;
     margin-bottom: 30px;
 }
-
+#info{
+    margin-right: 100px;
+}
 #foto-perfil{
     text-align: center;
     margin-top: 5px;
 }
 img{
     border-radius: 50%;  
-    border: 5px solid #E5BF86;
+    border: 5px solid #F1DBA0;
 }
 
 #datos-lista-izq ul li{
@@ -185,29 +186,89 @@ img{
     padding: 10px;
     background-color: beige;
     border-radius: 10px;
-    border: 2px solid #E5BF86;
+    border: 2px solid #F1DBA0;
 }
 
+#info-ad{
+    overflow: hidden;
+    margin-top: 60px;
+}
+#info-ad h4{
+    cursor: pointer;
+    margin-left: 35px;
+    background-color: beige;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+#info-ad i{
+    padding-left: 20px;
+}
+#info-ad li a{
+    color: #985E12;
+}
+.desplegar-info{
+    display: none;
+}
+
+
+.exp{
+    margin-left: 35px;
+}
+#exp-1{
+    margin-bottom: 60px;
+}
 #experiencia h4{
     background-color: beige;
     font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 26px;
 }
 #experiencia h6{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
 }
 
+
 #estudios h4{
+    font-weight: 600;
     background-color: beige;
     font-size: 26px;
+    margin-bottom: 15px;
 }
 #estudios h6 {
+    font-size: 22px;
+}
+#Universidad{
+    margin-bottom: 60px ;
+}
+#Secundaria{
+    margin-bottom: 60px ;
+    
+}
+#idiomas h6{
     font-size: 20px;
 }
 p, li{
     font-size: 19px; 
     text-align:left;
-    list-style: none    ;
+    list-style: none;
+    margin: 0px 0px 7px 0px;
+}
+
+#software {
+    font-size: 20px;
+    border: #F1DBA0;
+}
+#software i{
+    color: #F1DBA0;
+}
+#software th{
+    padding: 5px;
+}
+
+#software tbody tr:hover{
+    background-color: beige;
 }
 
 
@@ -220,10 +281,10 @@ form label{
     padding: 10px;
 }
 form input, textarea{
-    width: 40%;
+    width: 60%;
     border-radius: 6px;
     padding: 5px;
-    border: 2px solid black;
+    border: 2px solid #985E12;
     margin-bottom: 10px;
 }
 
@@ -233,10 +294,11 @@ form input, textarea{
     border-radius: 5px;
 } 
 button{
-    border: 1px solid #E5BF86;
+    color: #985E12;
+    border: 1px solid #F1DBA0;
     border-radius: 5px;
-    width: 40%;
-    background-color: #E5BF86;
+    width: 60%;
+    background-color: #F1DBA0;
 }
 
 footer{

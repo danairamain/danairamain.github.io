@@ -7,7 +7,6 @@
     <title>Evelyn Smith CV</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
@@ -23,12 +22,12 @@
     <main>
     
         <section>
-            <nav id="side-bar">
-                <header id="toggle">
-                    <a href="">
+            <nav id="side-bar" class="cerrado">
+                <header>
+                    <div id="menu">
                         <i class="fa-solid fa-bars" id="boton-menu"></i>
                         <span class="text-bar">Menú</span>
-                    </a>
+                    </div>
                 </header>
                 <ul>
                     <li>
@@ -45,19 +44,19 @@
                     </li>
                     <li >
                         <a href="#experiencia">
-                            <i class="fa-solid fa-business-time icon"></i>
+                            <i class="fa-solid fa-briefcase"></i>
                             <span class="text-bar">Experiencia</span>
                         </a>
                     </li>
                     <li>
                         <a href="#estudios">
-                            <i class="fa-solid fa-book icon"></i>
+                            <i class="fa-solid fa-graduation-cap"></i>
                             <span class="text-bar">Educación</span>
                         </a>
                     </li>
                     <li>
                         <a href="#formulario-contacto">
-                            <i class="fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-envelope"></i>
                             <span class="text-bar">Contacto</span>
                         </a>
                     </li>
@@ -75,9 +74,7 @@
 
         <section id="contenido">
             <div id="sobre-mí" class="container">
-                <h2>SOBRE MÍ</h2>
-            </div>
-            <div class="container">    
+                <h2>SOBRE MÍ</h2>  
                 <div class="row">
                     <div class="col" id="datos-lista-izq">
                          <ul>
@@ -117,24 +114,44 @@
                 objetivos laborales. Busco crecer en una empresa que me permita desarrollar mis habilidades. 
                 </p> 
             </div>
+            <div class="container" id="info-ad">
+                <h4 id="mas-info">Información adicional <i class="fa-solid fa-chevron-down"></i></h4>
+                    <ul id="lista-info" class="desplegar-info">
+                        <li><i class="fa-brands fa-linkedin"></i>
+                            <a href="http://linkedin.com" target="_blank">Linkedin</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Flexibilidad horaria.</li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Disponibilidad para viajar.</li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Habilidades de análisis y resolución de problemas.</li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Conocimientos de edición y producción audiovisual.</li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Capacidad de aprendizaje constante.</li>
+                        <li><i class="fa-solid fa-arrow-right"></i>
+                            Gran comunicación y planificación.</li>
+                    </ul>
+            </div>
 
 
             <div id="experiencia" class="container">
                 <h2>EXPERIENCIA</h2>
-                    <div>        
-                        <h4>Soporte técnico</h4>
-                        <h6>Freelancer</h6>
-                        <p>Agosto 2020 - Diciembre 2020</p>
-                        <ul>
-                            <li><i class="fa-solid fa-arrow-right"></i>
+                <div class="exp">
+                    <div id="exp-1">   
+                            <h4>Soporte técnico</h4>
+                            <h6>Freelancer</h6>
+                            <p>Agosto 2020 - Diciembre 2020</p>
+                            <ul>
+                                <li><i class="fa-solid fa-arrow-right"></i>
                                 Realización de mantenimiento de equipos de cómputo para más de 15 clientes.</li>
-                            <li><i class="fa-solid fa-arrow-right"></i>
-                                Actualización del software de los 3 ordenadores de un supermercado local</li>
-                            <li><i class="fa-solid fa-arrow-right"></i>
+                                <li><i class="fa-solid fa-arrow-right"></i>
+                                Actualización del software de los 3 ordenadores de un supermercado local.</li>
+                                <li><i class="fa-solid fa-arrow-right"></i>
                                 Realización de cambios de disco duro para 5 clientes diferentes.</li>
-                        </ul>
+                            </ul>
                     </div>
-                    <div>
+                    <div id="exp-2">
                         <h4>Cajera</h4>
                         <h6>Supermercado local</h6>
                         <p>Marzo 2019 - Diciembre 2019</p>
@@ -149,6 +166,7 @@
                                 
                         </ul>
                     </div>
+                </div>
 
 
             </div>
@@ -176,24 +194,65 @@
                         </li>
                     </ul>
                 </div>
+                <div id="idiomas">
+                    <ul>
+                    <h4><i class="fa-solid fa-paperclip"></i>
+                        Idiomas</h4>
+                        <h6>Español: nativo</h6>
+                        <h6>Inglés: intermedio</h6>
+                        <h6>Inglés técnico: intermedio</h6>
+                    </ul>
+                </div>
                 
             </div>             
 
             <div class="container">
-
                 <h2>SOFTWARE</h2>
-                <ul>
-                    <li ><i class="fa-solid fa-check"></i>
-                        Microsoft: Word, Excel, Powerpoint, Outlook. (Experto)</li>
-                    <li> <i class="fa-solid fa-check"></i>
-                        Adobe Photoshop (Intermedio)</li>
-                    <li><i class="fa-solid fa-check"></i>
-                        Adobe Illustrator (Intermedio)</li>
-                    <li><i class="fa-solid fa-check"></i>
-                        Visual Code (Básico)</li>
-                </ul>
+                <table id="software" class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th >Programa</th>
+                            <th>Nivel de usuario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><i class="fa-solid fa-square-check"></i></th>
+                            <td>Microsoft Word</td>
+                            <td>Experto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="fa-solid fa-square-check"></i></th>
+                            <td>Microsoft Excel</td>
+                            <td>Experto</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-square-check"></i></th>
+                            <td>Powerpoint</td>
+                            <td>Experto</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-square-check"></i></th>
+                            <td>Adobe Photoshop</td>
+                            <td>Intermedio</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-square-check"></i></th>
+                            <td>Adobe Illustrator</td>
+                            <td>Intermedio</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa-solid fa-square-check"></i></th>
+                            <td>Visual Code </td>
+                            <td>Básico</td>
+                        </tr>
+
+                    </tbody>                        
+                        
+                </table>
             </div>
-    
+
             <div id="formulario-contacto" class="container">
                 <h2>FORMULARIO DE CONTACTO</h2>
                     <form action="">
@@ -212,7 +271,7 @@
                             <button type="submit">Enviar</button>
                         </div>
                     </form> 
-            <script src="script.js"></script>
+            
             </div>
             
             <footer>
@@ -220,5 +279,7 @@
             </footer>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
