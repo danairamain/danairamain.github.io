@@ -1,7 +1,15 @@
 
-const toggle = document.querySelector('#boton-menu');
+const botonMenu = document.querySelector('#boton-menu');
 const sidebar = document.querySelector('#side-bar');
 
-toggle.addEventListener('click', function(){
-    sidebar.style.widht='170px'; return false
+botonMenu.addEventListener('click', ()=>{
+    sidebar.classList.toggle('cerrado');
+})
+
+
+const masInfo = document.querySelector('#mas-info');
+const listaInfo = document.querySelector('#lista-info');
+
+masInfo.addEventListener('click', ()=>{
+    listaInfo.classList.toggle('desplegar-info');
 })
